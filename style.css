@@ -87,10 +87,9 @@ header{
 
 .zen-resources{
     width: 90%;
-
     font-style: italic;
     border-radius: 10px;
-    background-color: rgb(243, 241, 199);
+    background-color: rgb(243, 241, 199); 
     box-shadow: -3px -3px 3px rgb(223, 221, 189);
     max-width: 100%;
     margin-left: 7%;
