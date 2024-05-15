@@ -26,13 +26,24 @@ div{
 
 }
 
-a{
-    color: #ff7575;
-    text-decoration-line:Edge 79;
-}   
+a:link{
+    color: #d36262;
+    font-weight: 800;
+    
+}
+
+a:hover { 
+    color: #ffa8a8; 
+    transition: 0.2s;
+}
+
+a:visited { 
+    color: #ffb3b3; 
+    font-weight: none;
+}
 
 body{
-    background-color: rgb(118, 181, 160);
+    background-color: #76b5a0;
     margin-left: 15%;
     margin-bottom: 40px;
     min-height: 100vh;
@@ -51,14 +62,6 @@ ul{
 }
 li{
     margin-bottom: 1em;
-}
-
-footer{
-    margin: 4%;
-    background-color: #0f7d7e;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
 }
 
 header{
@@ -81,19 +84,44 @@ header{
     position: absolute;
     padding-left: 2%;
     padding-right: 2%;
-    top: 560px;
+    top: 530px;
     left: 62%;
+}
+
+.design-selection li{
+    border-top: 1px solid #1f295c;
+}
+.design-selection ul:last-child{
+    border-bottom: 1px solid #1f295c;
 }
 
 .zen-resources{
     width: 90%;
     font-style: italic;
     border-radius: 10px;
-    background-color: rgb(243, 241, 199); 
+    background-color: #f3f1c7; 
     box-shadow: -3px -3px 3px rgb(223, 221, 189);
     max-width: 100%;
     margin-left: 7%;
     padding-bottom: 10px;
+}
+
+.benefits{
+    display: flex;
+    border-bottom: 1px solid #0f7d7e; 
+    padding-bottom: 20px; 
+}
+
+.benefits p{
+    float: left;
+    order: 1;
+    max-width: 70%;
+    flex-grow: 7;
+}
+.benefits h3{
+    float: right;
+    order: 2;
+    align-self: center;
 }
 
 .sidebar{
@@ -110,8 +138,42 @@ footer a{
     padding: 0.5em;
 }
 
+footer{
+    margin: 4%;
+    text-align: center;
+    border-radius: 9px;
+    background-color: #76b5a0; 
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+footer a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fffdd1;
+    text-decoration: none;
+    text-align: center;
+    flex: 1 1 10px; 
+    box-sizing: border-box; 
+}
+
+footer a:hover {
+    background-color: #0f7d7e; 
+}
+
 .main{
     line-height: 1.5em;
+}
+
+.main .explanation p:first-of-type:first-letter{
+    font-size: 300%;
+    font-family: Abril Fatface;
+    float: left;
+    margin-top: 5px;
+    padding-right: 10px;
 }
 
 .intro{
@@ -136,6 +198,41 @@ footer a{
 
 .design-archives{
     display: none;
+}
+
+
+.participation p:first-child{
+    display: flex;
+    max-width: 50%;
+    flex-direction: row;
+    order: 2;
+    flex-wrap: wrap;
+    float: right;
+}
+.participation p:only-child{
+    display: flex;
+    max-width: 50%;
+    flex-direction: row;
+    order: 3;
+    flex-wrap: wrap;
+    float: right;
+}
+.participation h3{
+    max-width:  50%;
+    order: 1;
+    align-self: center;
+    float: left;
+}
+
+.participation {
+    border-top: 1px solid #0f7d7e; 
+    padding-top: 20px; 
+    border-bottom: 1px solid #0f7d7e; 
+    padding-bottom: 20px;
+}
+
+.benefits + .participation {
+    border-top: none; 
 }
 
 abbr, a{
